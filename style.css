@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", serif;
+    font-size: 35px;
+}
+
+section {
+    padding: 80px;
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+}
+
+.banner h2 span {
+    font-size: 1.2em;
+
+
+}
+
+.banner h2 {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    position: center;
+    margin-left: 50px;
+
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 15px;
+    text-decoration: none;
+
+}
+
+.btn.btn-round {
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px
+}
+
+
+.btn:hover {
+    color: darkblue;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+
+    margin-bottom: 30px;
+    color: black;
+}
+
+.heading p {
+    font-style: italic;
+    font-size: 15px;
+}
+
+/*.heading h2{*/
+/*   font-size: 1em;*/
+/*}*/
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contextBx {
+    padding-left: 40px;
+    text-align: justify;
+}
+
+.propic {
+    width: 300px;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+.contextBx h2 {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.heading.bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bt {
+    margin-top: 20px;
+}
+
+.w50 {
+    min-width: 25%;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+header .logo {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 15px;
+}
+
+header ul {
+
+    position: relative;
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: navy;
+}
+
+header ul li {
+    list-style-type: none;
+    position: relative;
+    color: black;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+
+
+header.sticky {
+    background: black;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: white;
+
+}
+
+@media (max-width: 991px) {
+    header,
+    header.sticky {
+        padding: 20px 50px;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    header .menu {
+        position: fixed;
+        background: black;
+        display: block;
+        left: -100%;
+        top: 80px;
+        padding: 100px 50px;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        border-top: 1px solid rgba(900, 0 , 0,0.8);
+    }
+
+    header .menu.active{
+        position: fixed;
+        background: black;
+        display: block;
+        left: 0;
+        top: 80px;
+        padding: 100px 50px;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        border-top: 1px solid rgba(900, 0 , 0,0.8);
+        transition: 0.5s;
+    }
+
+    header ul li a {
+        color: white;
+    }
+
+    .toggle {
+        width: 80px;
+        height: 80px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image:url("my documents/list.png");
+        background-size: 25px;
+        background-color: white;
+
+    }
+
+    .toggle.active{
+        width: 40px;
+        height: 40px;
+        background-image:url("my documents/ss.png");
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+    }
+
+
+
+    header.sticky .toggle {
+        filter:invert(1);
+        -wekbit-filter:invert(1);
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .content .w50 img{
+        display: block;
+        margin: 0 auto 30px auto;
+    }
+
+
+}
+
+
+
+
+
